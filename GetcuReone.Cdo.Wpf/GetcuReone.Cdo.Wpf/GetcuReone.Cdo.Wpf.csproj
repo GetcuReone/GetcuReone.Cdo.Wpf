@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <RootNamespace>GetcuReone.Cdo</RootNamespace>
+        <DocumentationFile>GetcuReone.Cdo.Wpf.xml</DocumentationFile>
+
+        <Authors>Itua Juel-Gaben</Authors>
+        <PackageId>GetcuReone.Cdo.Wpf</PackageId>
+        <Product>GetcuReone.Cdo.Wpf</Product>
+        <Description>Common domain operations for WPF.</Description>
+        <RepositoryUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>getcureone cdo notification uinotificationwpf</PackageTags>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</PackageProjectUrl>
+        <Copyright>Copyright © 2020 $(Authors)</Copyright>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
+        <DelaySign>false</DelaySign>
+        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="UiNotification\UI\NotificationWindow\NotificationWindowPage.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Include="UiNotification\UI\NotificationWindow\NotificationWindowPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.0.0,)" />
+        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.0,)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\README.md">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+</Project>
+
