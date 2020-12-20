@@ -15,7 +15,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="..\ui_elements\styles\Button\RoundButtonStyle.xaml" />
+                <ResourceDictionary Source="..\..\ui_elements\styles\Button\RoundButtonStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
