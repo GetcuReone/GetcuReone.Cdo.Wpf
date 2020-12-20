@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <RootNamespace>GetcuReone.Cdo</RootNamespace>
+        <RootNamespace>GetcuReone.Cdo.Wpf</RootNamespace>
         <DocumentationFile>GetcuReone.Cdo.Wpf.xml</DocumentationFile>
 
         <Authors>Itua Juel-Gaben</Authors>
@@ -34,10 +34,14 @@
 
     <ItemGroup>
       <None Remove="UiNotification\UI\NotificationWindow\NotificationWindowPage.xaml" />
+      <None Remove="UiQuestion\AskQuestionYesNo\AskQuestionYesNoPage.xaml" />
     </ItemGroup>
 
     <ItemGroup>
       <Page Include="UiNotification\UI\NotificationWindow\NotificationWindowPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Include="UiQuestion\AskQuestionYesNo\AskQuestionYesNoPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </Page>
     </ItemGroup>

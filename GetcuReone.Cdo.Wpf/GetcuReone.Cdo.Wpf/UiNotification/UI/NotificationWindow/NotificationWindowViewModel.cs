@@ -1,4 +1,4 @@
-﻿namespace GetcuReone.Cdo.UiNotification.UI.NotificationWindow
+﻿namespace GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow
 {
     /// <summary>
     /// View-model for <see cref="NotificationWindowPage"/>

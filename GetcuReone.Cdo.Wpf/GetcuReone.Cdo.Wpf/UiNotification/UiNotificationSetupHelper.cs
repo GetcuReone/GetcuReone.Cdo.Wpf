@@ -1,7 +1,7 @@
 ﻿using GetcuReone.MvvmFrame.Wpf.Interfaces;
 using System.Windows.Controls;
 
-namespace GetcuReone.Cdo.UiNotification
+namespace GetcuReone.Cdo.Wpf.UiNotification
 {
     /// <summary>
     /// Installation Notification Instance Assistant

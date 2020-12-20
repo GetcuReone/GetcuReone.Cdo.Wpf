@@ -1,6 +1,6 @@
-﻿using GetcuReone.Cdo.UiNotification.Entities;
+﻿using GetcuReone.Cdo.Wpf.UiNotification.Entities;
 
-namespace GetcuReone.Cdo.UiNotification
+namespace GetcuReone.Cdo.Wpf.UiNotification
 {
     /// <summary>
     /// Informing interface from UI.

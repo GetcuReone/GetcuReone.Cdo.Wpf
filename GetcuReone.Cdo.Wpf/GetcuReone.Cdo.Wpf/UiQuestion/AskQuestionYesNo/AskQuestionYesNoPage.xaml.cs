@@ -1,12 +1,12 @@
 ﻿using GetcuReone.MvvmFrame.Interfaces;
 using System.Windows.Controls;
 
-namespace GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow
+namespace GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo
 {
     /// <summary>
-    /// Interaction logic for NotificationWindowPage.xaml
+    /// Interaction logic for AskQuestionYesNoPage.xaml
     /// </summary>
-    public partial class NotificationWindowPage : Page, IPage
+    public partial class AskQuestionYesNoPage : Page, IPage
     {
         /// <summary>
         /// 

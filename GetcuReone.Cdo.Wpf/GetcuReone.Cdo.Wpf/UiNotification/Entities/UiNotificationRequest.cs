@@ -1,6 +1,6 @@
-﻿using GetcuReone.Cdo.UiNotification.Entities.Enums;
+﻿using GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums;
 
-namespace GetcuReone.Cdo.UiNotification.Entities
+namespace GetcuReone.Cdo.Wpf.UiNotification.Entities
 {
     /// <summary>
     /// Request.

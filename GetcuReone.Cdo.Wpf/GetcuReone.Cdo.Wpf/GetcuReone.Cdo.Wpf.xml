@@ -4,123 +4,138 @@
         <name>GetcuReone.Cdo.Wpf</name>
     </assembly>
     <members>
-        <member name="T:GetcuReone.Cdo.UiNotification.Entities.Enums.NotificationTypes">
+        <member name="T:GetcuReone.Cdo.Wpf.Models.TextModel">
+            <summary>
+            Model for text.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.TextModel.Visibility">
+            <summary>
+            Visibility text.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.TextModel.Text">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes">
             <summary>
             Notification types.
             </summary>
         </member>
-        <member name="F:GetcuReone.Cdo.UiNotification.Entities.Enums.NotificationTypes.Info">
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Info">
             <summary>
             Info.
             </summary>
         </member>
-        <member name="F:GetcuReone.Cdo.UiNotification.Entities.Enums.NotificationTypes.Warning">
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Warning">
             <summary>
             Warning.
             </summary>
         </member>
-        <member name="F:GetcuReone.Cdo.UiNotification.Entities.Enums.NotificationTypes.Error">
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Error">
             <summary>
             Error.
             </summary>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.Entities.UiNotificationRequest">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest">
             <summary>
             Request.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.Entities.UiNotificationRequest.Title">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Title">
             <summary>
             Notification title.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.Entities.UiNotificationRequest.Message">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Message">
             <summary>
             Notification message.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.Entities.UiNotificationRequest.Type">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Type">
             <summary>
             Notification type.
             </summary>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.IUiNotification">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.IUiNotification">
             <summary>
             Informing interface from UI.
             </summary>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.IUiNotification.SendNotificationWindow(GetcuReone.Cdo.UiNotification.Entities.UiNotificationRequest)">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.IUiNotification.SendNotificationWindow(GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest)">
             <summary>
             Send notification at the top of the window.
             </summary>
             <param name="request">Request.</param>
             <returns></returns>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.UiNotificationSetupHelper">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UiNotificationSetupHelper">
             <summary>
             Installation Notification Instance Assistant
             </summary>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UiNotificationSetupHelper.SetupUiNitification``1(``0,System.Windows.Controls.Frame)">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UiNotificationSetupHelper.SetupUiNitification``1(``0,System.Windows.Controls.Frame)">
             <summary>
             Install notification service.
             </summary>
             <param name="configUi"></param>
             <param name="frame">Frame for bind.</param>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase">
             <summary>
             Base class for view-model ui notification.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Request">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Request">
             <summary>
             Request.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.CloseNotification_ButtonModel">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.CloseNotification_ButtonModel">
             <summary>
             Button close notification.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Visibility">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Visibility">
             <summary>
             Visibility.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Title">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Title">
             <summary>
             Title.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Message">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Message">
             <summary>
             Message.
             </summary>
         </member>
-        <member name="P:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Type">
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Type">
             <summary>
             Type.
             </summary>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.Initialize">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Initialize">
             <inheritdoc/>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.GoBack">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.GoBack">
             <summary>
             Go back.
             </summary>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.OnGoPageAsync(System.Object)">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnGoPageAsync(System.Object)">
             <inheritdoc/>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.OnLoadPageAsync">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLoadPageAsync">
             <inheritdoc/>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationVeiwModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
             <inheritdoc/>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowPage">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage">
             <summary>
             Interaction logic for NotificationWindowPage.xaml
             </summary>
@@ -128,22 +143,151 @@
             NotificationWindowPage
             </summary>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializePageComponent``1(``0)">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializePageComponent``1(``0)">
             <summary>
             
             </summary>
             <typeparam name="TViewModel"></typeparam>
             <param name="viewModel"></param>
         </member>
-        <member name="M:GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializeComponent">
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializeComponent">
             <summary>
             InitializeComponent
             </summary>
         </member>
-        <member name="T:GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowViewModel">
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowViewModel">
             <summary>
-            View-model for <see cref="T:GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowPage"/>
+            View-model for <see cref="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage"/>
             </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage">
+            <summary>
+            Interaction logic for AskQuestionYesNoPage.xaml
+            </summary>
+            <summary>
+            AskQuestionYesNoPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel">
+            <summary>
+            View-model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Yes_ButtonModel">
+            <summary>
+            Button yes.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.No_ButtonModel">
+            <summary>
+            Button no.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest">
+            <summary>
+            Request to ask a question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest.Question">
+            <summary>
+            Text question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest.QuestionDetail">
+            <summary>
+            Additional information to the question.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult">
+            <summary>
+            Result to ask a question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult.Answer">
+            <summary>
+            Answer.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.IUiQuestion">
+            <summary>
+            User polling interface through UI.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.IUiQuestion.AskQuestionYesNoAsync(GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest)">
+            <summary>
+            Ask a question (yes/no).
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase">
+            <summary>
+            Base view-model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.VisibilityPage">
+            <summary>
+            Page visibility.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Question">
+            <summary>
+            Text question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.QuestionDetail">
+            <summary>
+            Question detail.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Answer">
+            <summary>
+            Answer.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.CloseQuestion">
+            <summary>
+            Close question.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLoadPageAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.UiQuestionSetupHelper">
+            <summary>
+            Installation Notification Instance Assistant.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiQuestionSetupHelper.SetupUiQuestion``1(``0,System.Windows.Controls.Frame)">
+            <summary>
+            Install question service.
+            </summary>
+            <param name="configUi"></param>
+            <param name="frame">Frame for bind.</param>
         </member>
     </members>
 </doc>

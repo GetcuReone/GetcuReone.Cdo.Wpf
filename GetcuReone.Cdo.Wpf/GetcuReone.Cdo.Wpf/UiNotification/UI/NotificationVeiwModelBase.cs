@@ -1,13 +1,13 @@
 ﻿using GetcuReone.Cdi.MvvmFrameWpf;
-using GetcuReone.Cdo.UiNotification.Entities;
-using GetcuReone.Cdo.UiNotification.Entities.Enums;
+using GetcuReone.Cdo.Wpf.UiNotification.Entities;
+using GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums;
 using GetcuReone.MvvmFrame.Wpf.Commands;
 using GetcuReone.MvvmFrame.Wpf.EventArgs;
 using GetcuReone.MvvmFrame.Wpf.Models;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace GetcuReone.Cdo.UiNotification.UI
+namespace GetcuReone.Cdo.Wpf.UiNotification.UI
 {
     /// <summary>
     /// Base class for view-model ui notification.

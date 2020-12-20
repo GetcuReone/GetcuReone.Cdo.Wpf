@@ -1,4 +1,4 @@
-﻿namespace GetcuReone.Cdo.UiNotification.Entities.Enums
+﻿namespace GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums
 {
     /// <summary>
     /// Notification types.

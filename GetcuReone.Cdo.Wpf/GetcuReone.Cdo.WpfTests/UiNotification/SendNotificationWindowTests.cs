@@ -1,7 +1,7 @@
-﻿using GetcuReone.Cdo.UiNotification;
-using GetcuReone.Cdo.UiNotification.Entities;
-using GetcuReone.Cdo.UiNotification.Entities.Enums;
-using GetcuReone.Cdo.UiNotification.UI.NotificationWindow;
+﻿using GetcuReone.Cdo.Wpf.UiNotification;
+using GetcuReone.Cdo.Wpf.UiNotification.Entities;
+using GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums;
+using GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow;
 using GetcuReone.GetcuTestAdapter;
 using GetcuReone.MvvmFrame.Wpf.TestAdapter;
 using GetcuReone.MvvmFrame.Wpf.TestAdapter.Helpers;

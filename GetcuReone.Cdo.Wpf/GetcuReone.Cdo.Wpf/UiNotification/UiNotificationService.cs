@@ -1,10 +1,10 @@
-﻿using GetcuReone.Cdo.UiNotification.Entities;
-using GetcuReone.Cdo.UiNotification.UI.NotificationWindow;
+﻿using GetcuReone.Cdo.Wpf.UiNotification.Entities;
+using GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow;
 using GetcuReone.MvvmFrame.Wpf;
 using GetcuReone.MvvmFrame.Wpf.Entities;
 using System.Windows;
 
-namespace GetcuReone.Cdo.UiNotification
+namespace GetcuReone.Cdo.Wpf.UiNotification
 {
     internal sealed class UiNotificationService : UiServiceBase, IUiNotification
     {

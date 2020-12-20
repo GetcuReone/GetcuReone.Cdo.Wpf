@@ -1,11 +1,11 @@
 ﻿<Page
-    x:Class="GetcuReone.Cdo.UiNotification.UI.NotificationWindow.NotificationWindowPage"
+    x:Class="GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:GetcuReone.Cdo.UiNotification.UI.NotificationWindow"
+    xmlns:local="clr-namespace:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:notifyEnums="clr-namespace:GetcuReone.Cdo.UiNotification.Entities.Enums"
+    xmlns:notifyEnums="clr-namespace:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums"
     d:DataContext="{d:DesignInstance local:NotificationWindowViewModel,
                                      IsDesignTimeCreatable=True}"
     d:DesignHeight="450"
