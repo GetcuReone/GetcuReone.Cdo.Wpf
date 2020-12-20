@@ -21,6 +21,21 @@
         <ProjectReference Include="..\Infrastructure\TestCommon\TestCommon.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Env\config.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="UiSettings\Env\GetcuReone_Settings.tow.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="UiSettings\Env\GetcuReone_Settings.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="UiSettings\Env\GetcuReone_SettingTypes.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>

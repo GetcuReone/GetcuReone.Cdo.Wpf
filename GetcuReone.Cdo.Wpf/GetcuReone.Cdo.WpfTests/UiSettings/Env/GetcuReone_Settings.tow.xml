@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingContext>
+    <name>Setting</name>
+    <description>Settings for application</description>
+
+    <namespace code="NamespaceFromTowFile">
+        <name>Example namspace name for tow file</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile1">
+        <name>Example namspace name for tow file 1</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile2">
+        <name>Example namspace name for tow file 2</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile3">
+        <name>Example namspace name for tow file 3</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile4">
+        <name>Example namspace name for tow file 4</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile5">
+        <name>Example namspace name for tow file 5</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile6">
+        <name>Example namspace name for tow file 6</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile7">
+        <name>Example namspace name for tow file 7</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+
+    <namespace code="NamespaceFromTowFile8">
+        <name>Example namspace name for tow file 8</name>
+        <description>Description namespace</description>
+
+        <setting type="bool" code="SettingBool">
+            <defaultValue>true</defaultValue>
+            <name>Setting bool</name>
+            <description>Description SettingBool</description>
+        </setting>
+
+    </namespace>
+</SettingContext>
