@@ -7,6 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="GetcuReone.config" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="GetcuReone.config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="MvvmFrameWpf.TestAdapter.Extensions" Version="[1.0.0,)" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
         <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
@@ -22,9 +32,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Env\config.xml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
       <None Update="UiSettings\Env\GetcuReone_Settings.tow.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
