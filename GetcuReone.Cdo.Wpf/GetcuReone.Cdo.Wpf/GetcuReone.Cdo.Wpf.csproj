@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>getcureone cdo notification question settings wpf</PackageTags>
-        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageReleaseNotes>Added OpenFileDialog</PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</PackageProjectUrl>
         <Copyright>Copyright © 2020 $(Authors)</Copyright>
