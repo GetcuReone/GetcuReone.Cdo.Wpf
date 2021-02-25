@@ -39,10 +39,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
             set
             {
                 if (SetPropertyValue(ref _selectNamespace, value) && value != null)
-                {
                     Navigate<NamespacePage, NamespaceViewModel>(value);
-                    SelectNamespace = null;
-                }
             }
         }
         private NamespaceModel _selectNamespace;

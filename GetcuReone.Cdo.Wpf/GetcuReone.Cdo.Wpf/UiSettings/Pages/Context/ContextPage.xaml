@@ -67,6 +67,7 @@
                     ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                     ScrollViewer.VerticalScrollBarVisibility="Hidden"
                     SelectedItem="{Binding SelectNamespace}"
+                    SelectionChanged="listNamespaces_SelectionChanged"
                     VirtualizingPanel.ScrollUnit="Pixel">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
