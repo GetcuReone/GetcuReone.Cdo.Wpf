@@ -18,5 +18,10 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
             DataContext = viewModel;
             InitializeComponent();
         }
+
+        private void listNamespaces_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            listNamespaces.UnselectAll();
+        }
     }
 }
