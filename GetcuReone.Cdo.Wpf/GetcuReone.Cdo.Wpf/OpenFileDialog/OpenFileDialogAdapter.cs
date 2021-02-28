@@ -33,7 +33,11 @@ namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 
             var dialog = CreateProxy();
             dialog.Filter = request.Filter;
-            dialog.Title = request.TitleDialog;
+            if (string.IsNullOrEmpty(request.TitleDialog))
+                dialog.Title = request.TitleDialog;
+            if (string.IsNullOrEmpty(request.InitialFolder))
+                dialog.InitialDirectory = request.InitialFolder;
+            dialog.CheckFileExists = request.CheckFileExists;
             dialog.Multiselect = request.MultiSelect;
 
             var result = new SelectFilesResult
