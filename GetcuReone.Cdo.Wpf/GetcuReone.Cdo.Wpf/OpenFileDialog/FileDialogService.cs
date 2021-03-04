@@ -1,10 +1,13 @@
-﻿using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
+﻿using GetcuReone.Cdi;
+using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
 using System.Linq;
 
 namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 {
-    internal sealed class FileDialogService : IFileDialog
+    internal sealed class FileDialogService : GrFactoryBase, IFileDialog
     {
+        protected override string FactoryName => nameof(FileDialogService);
+
         public SelectFilesResult SelectFiles(SelectFilesRequest request)
         {
             var dialog = new Microsoft.Win32.OpenFileDialog();
