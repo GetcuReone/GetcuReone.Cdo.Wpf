@@ -1,13 +1,12 @@
 ﻿using GetcuReone.Cdi;
 using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
-using System.Linq;
 
 namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 {
     /// <summary>
     /// Adapter for <see cref="Microsoft.Win32.OpenFileDialog"/>.
     /// </summary>
-    public sealed class OpenFileDialogAdapter : GrAdapterProxyBase<Microsoft.Win32.OpenFileDialog>
+    public sealed class OpenFileDialogAdapter : GrAdapterProxyBase<IFileDialog>
     {
         /// <summary>
         /// Adapter name.
@@ -18,7 +17,7 @@ namespace GetcuReone.Cdo.Wpf.OpenFileDialog
         /// Constructor.
         /// </summary>
         public OpenFileDialogAdapter()
-            : base(() => new Microsoft.Win32.OpenFileDialog())
+            : base(() => new FileDialogService())
         {
         }
 
@@ -31,22 +30,8 @@ namespace GetcuReone.Cdo.Wpf.OpenFileDialog
         {
             CallMethodLogging(request);
 
-            var dialog = CreateProxy();
-            dialog.Filter = request.Filter;
-            if (string.IsNullOrEmpty(request.TitleDialog))
-                dialog.Title = request.TitleDialog;
-            if (string.IsNullOrEmpty(request.InitialFolder))
-                dialog.InitialDirectory = request.InitialFolder;
-            dialog.CheckFileExists = request.CheckFileExists;
-            dialog.Multiselect = request.MultiSelect;
-
-            var result = new SelectFilesResult
-            {
-                ResultShowDialog = dialog.ShowDialog(),
-                SelectedFiles = dialog.FileNames.ToList(),
-            };
-
-            return ReturnLogging(result);
+            return ReturnLogging(
+                CreateProxy().SelectFiles(request));
         }
     }
 }
