@@ -28,8 +28,8 @@
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
         <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).0.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -55,9 +55,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.0.0,)" />
-        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.0,)" />
-        <PackageReference Include="GetcuReone.Cdo.Settings" Version="[1.1.0,)" />
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.1.6,)" />
+        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.2,)" />
+        <PackageReference Include="GetcuReone.Cdo.Settings" Version="[1.1.1,)" />
     </ItemGroup>
 
     <ItemGroup>
