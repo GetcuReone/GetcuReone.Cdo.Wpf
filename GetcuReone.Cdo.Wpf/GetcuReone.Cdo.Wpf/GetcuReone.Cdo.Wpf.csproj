@@ -1,11 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+    <Import Project="..\.buildTools\GetcuReone.Lib.props" />
+
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <RootNamespace>GetcuReone.Cdo.Wpf</RootNamespace>
-        <DocumentationFile>GetcuReone.Cdo.Wpf.xml</DocumentationFile>
-
-        <Authors>Itua Juel-Gaben</Authors>
+        
         <PackageId>GetcuReone.Cdo.Wpf</PackageId>
         <Product>GetcuReone.Cdo.Wpf</Product>
         <Description>Common domain operations for WPF.</Description>
@@ -22,14 +21,6 @@
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-        <SignAssembly>true</SignAssembly>
-        <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
-        <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).0.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -55,9 +46,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.1.6,)" />
-        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.2,)" />
-        <PackageReference Include="GetcuReone.Cdo.Settings" Version="[1.1.1,)" />
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[2.0.0,)" />
+        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.3,)" />
+        <PackageReference Include="GetcuReone.Cdo.Settings" Version="[2.0.0,)" />
     </ItemGroup>
 
     <ItemGroup>
