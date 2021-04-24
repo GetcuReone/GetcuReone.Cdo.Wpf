@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetcuReone.Cdo.Wpf", "GetcuReone.Cdo.Wpf\GetcuReone.Cdo.Wpf.csproj", "{FA1C2A24-D6DE-44B1-AC07-FA8E6C06B0AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetcuReone.Cdo.Wpf", "GetcuReone.Cdo.Wpf\GetcuReone.Cdo.Wpf.csproj", "{FA1C2A24-D6DE-44B1-AC07-FA8E6C06B0AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8FB02E2B-87A1-4C2E-89B7-6716F65637C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureTests", "Infrastructure\InfrastructureTests\InfrastructureTests.csproj", "{ED5DD36F-78D5-4D86-BAD5-6C32CCE92F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureTests", "Infrastructure\InfrastructureTests\InfrastructureTests.csproj", "{ED5DD36F-78D5-4D86-BAD5-6C32CCE92F6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCommon", "Infrastructure\TestCommon\TestCommon.csproj", "{1BAC1F40-55DB-4834-A326-826CAA731462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCommon", "Infrastructure\TestCommon\TestCommon.csproj", "{1BAC1F40-55DB-4834-A326-826CAA731462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetcuReone.Cdo.WpfTests", "GetcuReone.Cdo.WpfTests\GetcuReone.Cdo.WpfTests.csproj", "{9BC26761-DA87-4437-A868-EB7214D2BA88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetcuReone.Cdo.WpfTests", "GetcuReone.Cdo.WpfTests\GetcuReone.Cdo.WpfTests.csproj", "{9BC26761-DA87-4437-A868-EB7214D2BA88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".buildTools", ".buildTools", "{F3F47CCB-8A6C-4612-A0D2-1350E1AF9793}"
+	ProjectSection(SolutionItems) = preProject
+		.buildTools\GetcuReone.Common.props = .buildTools\GetcuReone.Common.props
+		.buildTools\GetcuReone.Lib.props = .buildTools\GetcuReone.Lib.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
