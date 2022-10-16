@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GetcuReone.Cdo.Wpf</name>
+    </assembly>
+    <members>
+        <member name="T:GetcuReone.Cdo.Wpf.CdoWpfErrorCode">
+            <summary>
+            Error codes.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.Wpf.CdoWpfErrorCode.InvalidSettingValue">
+            <summary>
+            Invalid setting value.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.Wpf.CdoWpfErrorCode.NotificationNotInstalled">
+            <summary>
+            Notification service not installed.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.FactFactory.CdoWpfRulesProvider.GetDefaultFacts">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.FactFactory.CdoWpfRulesProvider.GetRules">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_ContextModel">
+            <summary>
+            Context model.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_NamespaceModels">
+            <summary>
+            List <see cref="T:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel"/>.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingModel">
+            <summary>
+            Setting model.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingModels">
+            <summary>
+            List <see cref="T:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel"/>.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingModel_Setting">
+            <summary>
+            Setting.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingModel_ValidationErrors">
+            <summary>
+            Setting model validation errors.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_Settings_Changed">
+            <summary>
+            List of changed settings.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingTypes">
+            <summary>
+            Setting type list.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingValueError">
+            <summary>
+            Error information for setting.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingValueErrors">
+            <summary>
+            List <see cref="T:GetcuReone.Cdo.Wpf.UiSettings.Entities.SettingValueError"/>
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_ViewModel">
+            <summary>
+            View-model.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter">
+            <summary>
+            Facade for work with FileExplorer.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter.AdapterName">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter.SelectItem(System.String)">
+            <summary>
+            Opens explorer and selects an <paramref name="pathItem"/>.
+            </summary>
+            <param name="pathItem"></param>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.Models.RadioButtonModel`1">
+            <summary>
+            Model for radio button
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.RadioButtonModel`1.IsChecked">
+            <summary>
+            Is checked
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.RadioButtonModel`1.Value">
+            <summary>
+            Value.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.RadioButtonModel`1.GroupName">
+            <summary>
+            Group name.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.Models.RadioButtonModel">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.Models.TextModel">
+            <summary>
+            Model for text.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.TextModel.Visibility">
+            <summary>
+            Visibility text.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.Models.TextModel.Text">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest">
+            <summary>
+            Request for selection files.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest.TitleDialog">
+            <summary>
+            Title dialog.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest.Filter">
+            <summary>
+            Filter for files.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest.MultiSelect">
+            <summary>
+            Can I select multiple files.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest.InitialFolder">
+            <summary>
+            The path to the folder that Explorer will open by default.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest.CheckFileExists">
+            <summary>
+            Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesResult">
+            <summary>
+            Result for selection files.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesResult.SelectedFiles">
+            <summary>
+            Selected files.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesResult.ResultShowDialog">
+            <summary>
+            Dilog show result.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService">
+            <inheritdoc cref="T:GetcuReone.Cdo.Wpf.OpenFileDialog.IFileDialog"/>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.FactoryName">
+            <inheritdoc />
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)">
+            <inheritdoc />
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.OpenFileDialog.IFileDialog">
+            <summary>
+            Service for work FileExplorer
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.OpenFileDialog.IFileDialog.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)">
+            <summary>
+            Open file explorer to select files.
+            </summary>
+            <param name="request">Request.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter">
+            <summary>
+            Adapter for <see cref="T:Microsoft.Win32.OpenFileDialog"/>.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.AdapterName">
+            <summary>
+            Adapter name.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)">
+            <summary>
+            Call Explorer to select files by user.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes">
+            <summary>
+            Notification types.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Info">
+            <summary>
+            Info.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Warning">
+            <summary>
+            Warning.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Error">
+            <summary>
+            Error.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest">
+            <summary>
+            Request.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Title">
+            <summary>
+            Notification title.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Message">
+            <summary>
+            Notification message.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest.Type">
+            <summary>
+            Notification type.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.IUiNotification">
+            <summary>
+            Informing interface from UI.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.IUiNotification.SendNotificationWindow(GetcuReone.Cdo.Wpf.UiNotification.Entities.UiNotificationRequest)">
+            <summary>
+            Send notification at the top of the window.
+            </summary>
+            <param name="request">Request.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UiNotificationSetupHelper">
+            <summary>
+            Installation Notification Instance Assistant
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UiNotificationSetupHelper.SetupUiNitification``1(``0,System.Windows.Controls.Frame)">
+            <summary>
+            Install notification service.
+            </summary>
+            <param name="configUi"></param>
+            <param name="frame">Frame for bind.</param>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase">
+            <summary>
+            Base class for view-model ui notification.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Request">
+            <summary>
+            Request.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.CloseNotification_ButtonModel">
+            <summary>
+            Button close notification.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Visibility">
+            <summary>
+            Visibility.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Title">
+            <summary>
+            Title.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Message">
+            <summary>
+            Message.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Type">
+            <summary>
+            Type.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.GoBack">
+            <summary>
+            Go back.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLoadPageAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage">
+            <summary>
+            Interaction logic for NotificationWindowPage.xaml
+            </summary>
+            <summary>
+            NotificationWindowPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowViewModel">
+            <summary>
+            View-model for <see cref="T:GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage"/>
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage">
+            <summary>
+            Interaction logic for AskQuestionYesNoPage.xaml
+            </summary>
+            <summary>
+            AskQuestionYesNoPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel">
+            <summary>
+            View-model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Yes_ButtonModel">
+            <summary>
+            Button yes.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.No_ButtonModel">
+            <summary>
+            Button no.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest">
+            <summary>
+            Request to ask a question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest.Question">
+            <summary>
+            Text question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest.QuestionDetail">
+            <summary>
+            Additional information to the question.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult">
+            <summary>
+            Result to ask a question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult.Answer">
+            <summary>
+            Answer.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.IUiQuestion">
+            <summary>
+            User polling interface through UI.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.IUiQuestion.AskQuestionYesNoAsync(GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionRequest)">
+            <summary>
+            Ask a question (yes/no).
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase">
+            <summary>
+            Base view-model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.VisibilityPage">
+            <summary>
+            Page visibility.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Question">
+            <summary>
+            Text question.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.QuestionDetail">
+            <summary>
+            Question detail.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Answer">
+            <summary>
+            Answer.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.CloseQuestion">
+            <summary>
+            Close question.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLoadPageAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiQuestion.UiQuestionSetupHelper">
+            <summary>
+            Installation Notification Instance Assistant.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiQuestion.UiQuestionSetupHelper.SetupUiQuestion``1(``0,System.Windows.Controls.Frame)">
+            <summary>
+            Install question service.
+            </summary>
+            <param name="configUi"></param>
+            <param name="frame">Frame for bind.</param>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Entities.SettingValueError">
+            <summary>
+            Setting validation error text
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Entities.SettingValueError.SettingFullCode">
+            <summary>
+            <see cref="P:GetcuReone.Cdm.Configuration.Settings.Setting.FullCode"/>.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Entities.SettingValueError.ErrorMessage">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.IUiSettings">
+            <summary>
+            Service for UI settings.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.IUiSettings.OpenSettingsAsync(System.Collections.Generic.List{GetcuReone.Cdo.Wpf.UiSettings.Entities.SettingValueError})">
+            <summary>
+            Open settings.
+            </summary>
+            <param name="settingValueErrors">(optional)</param>
+            <returns>Changed settings.</returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Models.ContextModel">
+            <summary>
+            Model for <see cref="T:GetcuReone.Cdm.Configuration.Settings.SettingContext"/>.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.ContextModel.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.ContextModel.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.ContextModel.Namespaces">
+            <summary>
+            Namespaces.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel">
+            <summary>
+            Model for <see cref="T:GetcuReone.Cdm.Configuration.Settings.SettingNamespace"/>.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.NamespacePath">
+            <summary>
+            Namespace path.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.Code">
+            <summary>
+            Code.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.Settings">
+            <summary>
+            Settings.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.NamespaceModel.Visibility">
+            <summary>
+            Visibility.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel">
+            <summary>
+            Setting model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.PermissibleValues">
+            <summary>
+            Permissible values.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.Code">
+            <summary>
+            Code.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.PermissibleValuesIsEnabled">
+            <summary>
+            IsEnubled <see cref="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.PermissibleValues"/>.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.PermissibleValuesVisibility">
+            <summary>
+            Visibility <see cref="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.PermissibleValues"/>
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.TextBoxVisibility">
+            <summary>
+            Visibility textbox
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.Value">
+            <summary>
+            Value.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.OnVerification(GetcuReone.MvvmFrame.EventArgs.MvvmElementPropertyVerifyChangeEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Models.SettingModel.OnErrors(System.Collections.ObjectModel.ReadOnlyCollection{GetcuReone.MvvmFrame.Entities.MvvmFrameErrorDetail})">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextPage">
+            <summary>
+            Interaction logic for NotificationWindowPage.xaml
+            </summary>
+            <summary>
+            ContextPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextPage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel">
+            <summary>
+            View-model.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.Context">
+            <summary>
+            Context.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.SelectNamespace">
+            <summary>
+            Select namespace.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.Ok_Command">
+            <summary>
+            Command for <see cref="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.Ok(GetcuReone.MvvmFrame.Wpf.Commands.CommandArgs)"/>
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespacePage">
+            <summary>
+            Interaction logic for NotificationWindowPage.xaml
+            </summary>
+            <summary>
+            NamespacePage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespacePage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespacePage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel">
+            <summary>
+            View-model
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel.Namespace">
+            <summary>
+            Context.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel.Ok_Command">
+            <summary>
+            Command for <see cref="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel.Ok(GetcuReone.MvvmFrame.Wpf.Commands.CommandArgs)"/>
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace.NamespaceViewModel.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.Wpf.UiSettings.UiSettingsSetupHelper">
+            <summary>
+            Setup helper.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.Wpf.UiSettings.UiSettingsSetupHelper.SetupUiSettings``1(``0,System.Windows.Controls.Frame)">
+            <summary>
+            Install <see cref="T:GetcuReone.Cdo.Wpf.UiSettings.IUiSettings"/>.
+            </summary>
+            <param name="configUi"></param>
+            <param name="frame">Frame for bind.</param>
+        </member>
+    </members>
+</doc>

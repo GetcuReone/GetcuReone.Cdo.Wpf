@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30611.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetcuReone.Cdo.Wpf", "GetcuReone.Cdo.Wpf\GetcuReone.Cdo.Wpf.csproj", "{FA1C2A24-D6DE-44B1-AC07-FA8E6C06B0AB}"
 EndProject
@@ -15,8 +15,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetcuReone.Cdo.WpfTests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".buildTools", ".buildTools", "{F3F47CCB-8A6C-4612-A0D2-1350E1AF9793}"
 	ProjectSection(SolutionItems) = preProject
+		.buildTools\getcureone-documentation.props = .buildTools\getcureone-documentation.props
 		.buildTools\GetcuReone.Common.props = .buildTools\GetcuReone.Common.props
 		.buildTools\GetcuReone.Lib.props = .buildTools\GetcuReone.Lib.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93E6AEE3-9532-48F8-BDA1-D9938CA223CA}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{91732C12-8C74-45DF-B2AF-57E9776584D0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Pipelines\develop-pipeline.yml = ..\Pipelines\develop-pipeline.yml
+		..\Pipelines\master-pipeline.yml = ..\Pipelines\master-pipeline.yml
+		..\Pipelines\release-pipeline.yml = ..\Pipelines\release-pipeline.yml
 	EndProjectSection
 EndProject
 Global
@@ -48,6 +63,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ED5DD36F-78D5-4D86-BAD5-6C32CCE92F6C} = {8FB02E2B-87A1-4C2E-89B7-6716F65637C4}
 		{1BAC1F40-55DB-4834-A326-826CAA731462} = {8FB02E2B-87A1-4C2E-89B7-6716F65637C4}
+		{91732C12-8C74-45DF-B2AF-57E9776584D0} = {93E6AEE3-9532-48F8-BDA1-D9938CA223CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA75BC69-0307-49EA-855A-AE1058FA36D8}

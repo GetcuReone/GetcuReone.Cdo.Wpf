@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\.buildTools\GetcuReone.Lib.props" />
+    <Import Project="..\.buildTools\getcureone-documentation.props" />
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
