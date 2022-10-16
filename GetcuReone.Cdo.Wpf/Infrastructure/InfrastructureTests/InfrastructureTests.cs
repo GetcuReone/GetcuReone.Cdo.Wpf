@@ -35,7 +35,7 @@ namespace InfrastructureTests
             var files = new string[]
             {
                 string.Format(libPattern, $"{_projectName}.dll"),
-                string.Format(libPattern, $"{_projectName}.xml"),
+                string.Format(libPattern, "API.md"),
 
                 "LICENSE",
                 "README.md",
