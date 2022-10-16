@@ -30,6 +30,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\GetcuReone.Cdo.Wpf\GetcuReone.Cdo.Wpf.csproj" />
         <ProjectReference Include="..\Infrastructure\TestCommon\TestCommon.csproj" />
     </ItemGroup>
 
