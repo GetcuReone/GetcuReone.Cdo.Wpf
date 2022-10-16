@@ -35,13 +35,12 @@ namespace InfrastructureTests
             var files = new string[]
             {
                 string.Format(libPattern, $"{_projectName}.dll"),
-                string.Format(libPattern, "API.md"),
 
                 "LICENSE",
                 "README.md",
             };
 
-            VerifyNugetContainsFiles(_solutionFolder, nugetId, files.Length + 4, files);
+            VerifyNugetContainsFiles(_solutionFolder, nugetId, files.Length + 5, files);
         }
 
         [TestMethod]
