@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\.buildTools\GetcuReone.Lib.props" />
+    <Import Project="..\.buildTools\GetcuReone.Common.props" />
+    <Import Project="..\.buildTools\getcureone-documentation.props" />
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
@@ -46,9 +47,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[2.0.0,)" />
-        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.3,)" />
-        <PackageReference Include="GetcuReone.Cdo.Settings" Version="[2.0.0,)" />
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="2.0.0" />
+        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="1.0.3" />
+        <PackageReference Include="GetcuReone.Cdo.Settings" Version="2.0.0" />
     </ItemGroup>
 
     <ItemGroup>
