@@ -17,7 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".buildTools", ".buildTools"
 	ProjectSection(SolutionItems) = preProject
 		.buildTools\getcureone-documentation.props = .buildTools\getcureone-documentation.props
 		.buildTools\GetcuReone.Common.props = .buildTools\GetcuReone.Common.props
-		.buildTools\GetcuReone.Lib.props = .buildTools\GetcuReone.Lib.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93E6AEE3-9532-48F8-BDA1-D9938CA223CA}"
