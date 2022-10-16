@@ -4,19 +4,24 @@ using System.Linq;
 
 namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 {
+    /// <inheritdoc cref="IFileDialog"/>
     internal sealed class FileDialogService : GrFactoryBase, IFileDialog
     {
+        /// <inheritdoc />
         protected override string FactoryName => nameof(FileDialogService);
 
+        /// <inheritdoc />
         public SelectFilesResult SelectFiles(SelectFilesRequest request)
         {
             var dialog = new Microsoft.Win32.OpenFileDialog();
 
-            dialog.Filter = request.Filter;
-            if (string.IsNullOrEmpty(request.TitleDialog))
+            if (!string.IsNullOrEmpty(request.TitleDialog))
                 dialog.Title = request.TitleDialog;
-            if (string.IsNullOrEmpty(request.InitialFolder))
+
+            if (!string.IsNullOrEmpty(request.InitialFolder))
                 dialog.InitialDirectory = request.InitialFolder;
+
+            dialog.Filter = request.Filter;
             dialog.CheckFileExists = request.CheckFileExists;
             dialog.Multiselect = request.MultiSelect;
 
