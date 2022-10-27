@@ -1,37 +1,22 @@
-﻿using GetcuReone.Cdi;
-using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
+﻿using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
+using GetcuReone.ComboPatterns.Adapter;
 
 namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 {
     /// <summary>
     /// Adapter for <see cref="Microsoft.Win32.OpenFileDialog"/>.
     /// </summary>
-    public sealed class OpenFileDialogAdapter : GrAdapterProxyBase<IFileDialog>
+    public sealed class OpenFileDialogAdapter : AdapterProxyBase<IFileDialog>
     {
-        /// <summary>
-        /// Adapter name.
-        /// </summary>
-        protected override string AdapterName => nameof(OpenFileDialogAdapter);
-
         /// <summary>
         /// Constructor.
         /// </summary>
-        public OpenFileDialogAdapter()
-            : base(() => new FileDialogService())
-        {
-        }
+        public OpenFileDialogAdapter() : base(() => new FileDialogService()) { }
 
-        /// <summary>
-        /// Call Explorer to select files by user.
-        /// </summary>
-        /// <param name="request"></param>
-        /// <returns></returns>
+        /// <inheritdoc cref="IFileDialog.SelectFiles(SelectFilesRequest)"/>
         public SelectFilesResult SelectFiles(SelectFilesRequest request)
         {
-            CallMethodLogging(request);
-
-            return ReturnLogging(
-                CreateProxy().SelectFiles(request));
+            return CreateProxy().SelectFiles(request);
         }
     }
 }

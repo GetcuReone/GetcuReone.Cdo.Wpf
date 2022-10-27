@@ -1,17 +1,14 @@
-﻿using GetcuReone.Cdi;
-using GetcuReone.Cdo.Process;
+﻿using GetcuReone.Cdo.Process;
+using GetcuReone.ComboPatterns.Adapter;
 
 namespace GetcuReone.Cdo.Wpf.FileExplorer
 {
     /// <summary>
     /// Facade for work with FileExplorer.
     /// </summary>
-    public sealed class FileExplorerAdapter : GrAdapterBase
+    public sealed class FileExplorerAdapter : AdapterBase
     {
-        private readonly string _explorerProgramName = "explorer.exe";
-
-        /// <inheritdoc/>
-        protected override string AdapterName => nameof(FileExplorerAdapter);
+        private const string _explorerProgramName = "explorer.exe";
 
         /// <summary>
         /// Opens explorer and selects an <paramref name="pathItem"/>.
@@ -19,11 +16,7 @@ namespace GetcuReone.Cdo.Wpf.FileExplorer
         /// <param name="pathItem"></param>
         public void SelectItem(string pathItem)
         {
-            CallMethodLogging(parameter: pathItem);
-
             GetAdapter<ProcessAdapter>().Start(_explorerProgramName, " /select, " + pathItem);
-
-            ReturnLogging();
         }
     }
 }

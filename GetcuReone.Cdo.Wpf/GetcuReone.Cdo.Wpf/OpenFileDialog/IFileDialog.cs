@@ -11,7 +11,7 @@ namespace GetcuReone.Cdo.Wpf.OpenFileDialog
         /// Open file explorer to select files.
         /// </summary>
         /// <param name="request">Request.</param>
-        /// <returns></returns>
+        /// <returns>Information about selected files</returns>
         SelectFilesResult SelectFiles(SelectFilesRequest request);
     }
 }
