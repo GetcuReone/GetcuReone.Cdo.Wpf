@@ -48,7 +48,6 @@
   - [FactoryName](#P-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService-FactoryName 'GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.FactoryName')
   - [SelectFiles()](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest- 'GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)')
 - [FileExplorerAdapter](#T-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter 'GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter')
-  - [AdapterName](#P-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter-AdapterName 'GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter.AdapterName')
   - [SelectItem(pathItem)](#M-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter-SelectItem-System-String- 'GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter.SelectItem(System.String)')
 - [IFileDialog](#T-GetcuReone-Cdo-Wpf-OpenFileDialog-IFileDialog 'GetcuReone.Cdo.Wpf.OpenFileDialog.IFileDialog')
   - [SelectFiles(request)](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-IFileDialog-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest- 'GetcuReone.Cdo.Wpf.OpenFileDialog.IFileDialog.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)')
@@ -95,8 +94,7 @@
 - [NotificationWindowViewModel](#T-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationWindow-NotificationWindowViewModel 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowViewModel')
 - [OpenFileDialogAdapter](#T-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter 'GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter')
   - [#ctor()](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-#ctor 'GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.#ctor')
-  - [AdapterName](#P-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-AdapterName 'GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.AdapterName')
-  - [SelectFiles(request)](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest- 'GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)')
+  - [SelectFiles()](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest- 'GetcuReone.Cdo.Wpf.OpenFileDialog.OpenFileDialogAdapter.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)')
 - [OpenSettings_ContextModel](#T-GetcuReone-Cdo-Wpf-FactFactory-Facts-UiSettings-OpenSettings_ContextModel 'GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_ContextModel')
 - [OpenSettings_NamespaceModels](#T-GetcuReone-Cdo-Wpf-FactFactory-Facts-UiSettings-OpenSettings_NamespaceModels 'GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_NamespaceModels')
 - [OpenSettings_SettingModel](#T-GetcuReone-Cdo-Wpf-FactFactory-Facts-UiSettings-OpenSettings_SettingModel 'GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings.OpenSettings_SettingModel')
@@ -586,13 +584,6 @@ GetcuReone.Cdo.Wpf.FileExplorer
 
 Facade for work with FileExplorer.
 
-<a name='P-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter-AdapterName'></a>
-### AdapterName `property`
-
-##### Summary
-
-*Inherit from parent.*
-
 <a name='M-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter-SelectItem-System-String-'></a>
 ### SelectItem(pathItem) `method`
 
@@ -626,7 +617,7 @@ Open file explorer to select files.
 
 ##### Returns
 
-
+Information about selected files
 
 ##### Parameters
 
@@ -1073,29 +1064,16 @@ Constructor.
 
 This constructor has no parameters.
 
-<a name='P-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-AdapterName'></a>
-### AdapterName `property`
-
-##### Summary
-
-Adapter name.
-
 <a name='M-GetcuReone-Cdo-Wpf-OpenFileDialog-OpenFileDialogAdapter-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest-'></a>
-### SelectFiles(request) `method`
+### SelectFiles() `method`
 
 ##### Summary
 
-Call Explorer to select files by user.
-
-##### Returns
-
-
+*Inherit from parent.*
 
 ##### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| request | [GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest](#T-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest 'GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest') |  |
+This method has no parameters.
 
 <a name='T-GetcuReone-Cdo-Wpf-FactFactory-Facts-UiSettings-OpenSettings_ContextModel'></a>
 ## OpenSettings_ContextModel `type`
