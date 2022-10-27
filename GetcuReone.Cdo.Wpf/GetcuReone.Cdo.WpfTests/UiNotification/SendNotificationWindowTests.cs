@@ -23,7 +23,7 @@ namespace GetcuReone.Cdo.UiNotificationWpfTests.UiNotification
         [TestMethod]
         [TestCategory(GetcuReoneTC.Unit)]
         [Description("Show notification.")]
-        [Timeout(Timeouts.Second.Twenty)]
+        [Timeout(Timeouts.Second.Ten)]
         public void ShowNotificationTestCase()
         {
             string title = "Is notification";
