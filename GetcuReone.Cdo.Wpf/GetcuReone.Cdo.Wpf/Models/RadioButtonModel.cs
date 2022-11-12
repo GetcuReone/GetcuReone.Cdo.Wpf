@@ -29,7 +29,5 @@ namespace GetcuReone.Cdo.Wpf.Models
     }
 
     /// <inheritdoc/>
-    public class RadioButtonModel : RadioButtonModel<ICommand>
-    {
-    }
+    public class RadioButtonModel : RadioButtonModel<ICommand> { }
 }

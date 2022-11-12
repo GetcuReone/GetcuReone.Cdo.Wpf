@@ -9,15 +9,6 @@
 - [AskQuestionResult](#T-GetcuReone-Cdo-Wpf-UiQuestion-Entities-AskQuestionResult 'GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult')
   - [Answer](#P-GetcuReone-Cdo-Wpf-UiQuestion-Entities-AskQuestionResult-Answer 'GetcuReone.Cdo.Wpf.UiQuestion.Entities.AskQuestionResult.Answer')
 - [AskQuestionViewModelBase](#T-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase')
-  - [Answer](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Answer 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Answer')
-  - [Question](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Question 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Question')
-  - [QuestionDetail](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-QuestionDetail 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.QuestionDetail')
-  - [VisibilityPage](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-VisibilityPage 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.VisibilityPage')
-  - [CloseQuestion()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-CloseQuestion 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.CloseQuestion')
-  - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Initialize 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.Initialize')
-  - [OnGoPageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnGoPageAsync-System-Object- 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnGoPageAsync(System.Object)')
-  - [OnLeavePageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs- 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)')
-  - [OnLoadPageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnLoadPageAsync 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.AskQuestionViewModelBase.OnLoadPageAsync')
 - [AskQuestionYesNoPage](#T-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoPage 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage')
   - [InitializeComponent()](#M-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoPage-InitializeComponent 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializeComponent')
   - [InitializePageComponent\`\`1(viewModel)](#M-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoPage-InitializePageComponent``1-``0- 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoPage.InitializePageComponent``1(``0)')
@@ -25,6 +16,28 @@
   - [No_ButtonModel](#P-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoViewModel-No_ButtonModel 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.No_ButtonModel')
   - [Yes_ButtonModel](#P-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoViewModel-Yes_ButtonModel 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Yes_ButtonModel')
   - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoViewModel-Initialize 'GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo.AskQuestionYesNoViewModel.Initialize')
+- [BaseAskQuestionViewModel](#T-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel')
+  - [Answer](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Answer 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.Answer')
+  - [Question](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Question 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.Question')
+  - [QuestionDetail](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-QuestionDetail 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.QuestionDetail')
+  - [VisibilityPage](#P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-VisibilityPage 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.VisibilityPage')
+  - [CloseQuestion()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-CloseQuestion 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.CloseQuestion')
+  - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Initialize 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.Initialize')
+  - [OnGoPageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnGoPageAsync-System-Object- 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.OnGoPageAsync(System.Object)')
+  - [OnLeavePageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs- 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)')
+  - [OnLoadPageAsync()](#M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnLoadPageAsync 'GetcuReone.Cdo.Wpf.UiQuestion.UiBase.BaseAskQuestionViewModel.OnLoadPageAsync')
+- [BaseNotificationVeiwModel](#T-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel')
+  - [CloseNotification_ButtonModel](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-CloseNotification_ButtonModel 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.CloseNotification_ButtonModel')
+  - [Message](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Message 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Message')
+  - [Request](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Request 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Request')
+  - [Title](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Title 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Title')
+  - [Type](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Type 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Type')
+  - [Visibility](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Visibility 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Visibility')
+  - [GoBack()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-GoBack 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.GoBack')
+  - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Initialize 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.Initialize')
+  - [OnGoPageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnGoPageAsync-System-Object- 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.OnGoPageAsync(System.Object)')
+  - [OnLeavePageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs- 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)')
+  - [OnLoadPageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnLoadPageAsync 'GetcuReone.Cdo.Wpf.UiNotification.UI.BaseNotificationVeiwModel.OnLoadPageAsync')
 - [CdoWpfErrorCode](#T-GetcuReone-Cdo-Wpf-CdoWpfErrorCode 'GetcuReone.Cdo.Wpf.CdoWpfErrorCode')
   - [InvalidSettingValue](#F-GetcuReone-Cdo-Wpf-CdoWpfErrorCode-InvalidSettingValue 'GetcuReone.Cdo.Wpf.CdoWpfErrorCode.InvalidSettingValue')
   - [NotificationNotInstalled](#F-GetcuReone-Cdo-Wpf-CdoWpfErrorCode-NotificationNotInstalled 'GetcuReone.Cdo.Wpf.CdoWpfErrorCode.NotificationNotInstalled')
@@ -45,7 +58,6 @@
   - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiSettings-Pages-Context-ContextViewModel-Initialize 'GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.Initialize')
   - [OnGoPageAsync()](#M-GetcuReone-Cdo-Wpf-UiSettings-Pages-Context-ContextViewModel-OnGoPageAsync-System-Object- 'GetcuReone.Cdo.Wpf.UiSettings.Pages.Context.ContextViewModel.OnGoPageAsync(System.Object)')
 - [FileDialogService](#T-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService 'GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService')
-  - [FactoryName](#P-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService-FactoryName 'GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.FactoryName')
   - [SelectFiles()](#M-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService-SelectFiles-GetcuReone-Cdo-Wpf-OpenFileDialog-Entities-SelectFilesRequest- 'GetcuReone.Cdo.Wpf.OpenFileDialog.FileDialogService.SelectFiles(GetcuReone.Cdo.Wpf.OpenFileDialog.Entities.SelectFilesRequest)')
 - [FileExplorerAdapter](#T-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter 'GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter')
   - [SelectItem(pathItem)](#M-GetcuReone-Cdo-Wpf-FileExplorer-FileExplorerAdapter-SelectItem-System-String- 'GetcuReone.Cdo.Wpf.FileExplorer.FileExplorerAdapter.SelectItem(System.String)')
@@ -77,17 +89,6 @@
   - [Info](#F-GetcuReone-Cdo-Wpf-UiNotification-Entities-Enums-NotificationTypes-Info 'GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Info')
   - [Warning](#F-GetcuReone-Cdo-Wpf-UiNotification-Entities-Enums-NotificationTypes-Warning 'GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums.NotificationTypes.Warning')
 - [NotificationVeiwModelBase](#T-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase')
-  - [CloseNotification_ButtonModel](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-CloseNotification_ButtonModel 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.CloseNotification_ButtonModel')
-  - [Message](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Message 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Message')
-  - [Request](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Request 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Request')
-  - [Title](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Title 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Title')
-  - [Type](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Type 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Type')
-  - [Visibility](#P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Visibility 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Visibility')
-  - [GoBack()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-GoBack 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.GoBack')
-  - [Initialize()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Initialize 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.Initialize')
-  - [OnGoPageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnGoPageAsync-System-Object- 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnGoPageAsync(System.Object)')
-  - [OnLeavePageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs- 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)')
-  - [OnLoadPageAsync()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnLoadPageAsync 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationVeiwModelBase.OnLoadPageAsync')
 - [NotificationWindowPage](#T-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationWindow-NotificationWindowPage 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage')
   - [InitializeComponent()](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationWindow-NotificationWindowPage-InitializeComponent 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializeComponent')
   - [InitializePageComponent\`\`1(viewModel)](#M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationWindow-NotificationWindowPage-InitializePageComponent``1-``0- 'GetcuReone.Cdo.Wpf.UiNotification.UI.NotificationWindow.NotificationWindowPage.InitializePageComponent``1(``0)')
@@ -201,90 +202,7 @@ GetcuReone.Cdo.Wpf.UiQuestion.UiBase
 
 ##### Summary
 
-Base view-model.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Answer'></a>
-### Answer `property`
-
-##### Summary
-
-Answer.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Question'></a>
-### Question `property`
-
-##### Summary
-
-Text question.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-QuestionDetail'></a>
-### QuestionDetail `property`
-
-##### Summary
-
-Question detail.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-VisibilityPage'></a>
-### VisibilityPage `property`
-
-##### Summary
-
-Page visibility.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-CloseQuestion'></a>
-### CloseQuestion() `method`
-
-##### Summary
-
-Close question.
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-Initialize'></a>
-### Initialize() `method`
-
-##### Summary
-
 *Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnGoPageAsync-System-Object-'></a>
-### OnGoPageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs-'></a>
-### OnLeavePageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-AskQuestionViewModelBase-OnLoadPageAsync'></a>
-### OnLoadPageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
 
 <a name='T-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoPage'></a>
 ## AskQuestionYesNoPage `type`
@@ -354,6 +272,208 @@ Button yes.
 
 <a name='M-GetcuReone-Cdo-Wpf-UiQuestion-AskQuestionYesNo-AskQuestionYesNoViewModel-Initialize'></a>
 ### Initialize() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='T-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel'></a>
+## BaseAskQuestionViewModel `type`
+
+##### Namespace
+
+GetcuReone.Cdo.Wpf.UiQuestion.UiBase
+
+##### Summary
+
+Base view-model.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Answer'></a>
+### Answer `property`
+
+##### Summary
+
+Answer.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Question'></a>
+### Question `property`
+
+##### Summary
+
+Text question.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-QuestionDetail'></a>
+### QuestionDetail `property`
+
+##### Summary
+
+Question detail.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-VisibilityPage'></a>
+### VisibilityPage `property`
+
+##### Summary
+
+Page visibility.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-CloseQuestion'></a>
+### CloseQuestion() `method`
+
+##### Summary
+
+Close question.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-Initialize'></a>
+### Initialize() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnGoPageAsync-System-Object-'></a>
+### OnGoPageAsync() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs-'></a>
+### OnLeavePageAsync() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiQuestion-UiBase-BaseAskQuestionViewModel-OnLoadPageAsync'></a>
+### OnLoadPageAsync() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='T-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel'></a>
+## BaseNotificationVeiwModel `type`
+
+##### Namespace
+
+GetcuReone.Cdo.Wpf.UiNotification.UI
+
+##### Summary
+
+Base class for view-model ui notification.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-CloseNotification_ButtonModel'></a>
+### CloseNotification_ButtonModel `property`
+
+##### Summary
+
+Button close notification.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Message'></a>
+### Message `property`
+
+##### Summary
+
+Message.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Request'></a>
+### Request `property`
+
+##### Summary
+
+Request.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Title'></a>
+### Title `property`
+
+##### Summary
+
+Title.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Type'></a>
+### Type `property`
+
+##### Summary
+
+Type.
+
+<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Visibility'></a>
+### Visibility `property`
+
+##### Summary
+
+Visibility.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-GoBack'></a>
+### GoBack() `method`
+
+##### Summary
+
+Go back.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-Initialize'></a>
+### Initialize() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnGoPageAsync-System-Object-'></a>
+### OnGoPageAsync() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs-'></a>
+### OnLeavePageAsync() `method`
+
+##### Summary
+
+*Inherit from parent.*
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-BaseNotificationVeiwModel-OnLoadPageAsync'></a>
+### OnLoadPageAsync() `method`
 
 ##### Summary
 
@@ -550,13 +670,6 @@ This method has no parameters.
 ##### Namespace
 
 GetcuReone.Cdo.Wpf.OpenFileDialog
-
-##### Summary
-
-*Inherit from parent.*
-
-<a name='P-GetcuReone-Cdo-Wpf-OpenFileDialog-FileDialogService-FactoryName'></a>
-### FactoryName `property`
 
 ##### Summary
 
@@ -891,104 +1004,7 @@ GetcuReone.Cdo.Wpf.UiNotification.UI
 
 ##### Summary
 
-Base class for view-model ui notification.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-CloseNotification_ButtonModel'></a>
-### CloseNotification_ButtonModel `property`
-
-##### Summary
-
-Button close notification.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Message'></a>
-### Message `property`
-
-##### Summary
-
-Message.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Request'></a>
-### Request `property`
-
-##### Summary
-
-Request.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Title'></a>
-### Title `property`
-
-##### Summary
-
-Title.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Type'></a>
-### Type `property`
-
-##### Summary
-
-Type.
-
-<a name='P-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Visibility'></a>
-### Visibility `property`
-
-##### Summary
-
-Visibility.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-GoBack'></a>
-### GoBack() `method`
-
-##### Summary
-
-Go back.
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-Initialize'></a>
-### Initialize() `method`
-
-##### Summary
-
 *Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnGoPageAsync-System-Object-'></a>
-### OnGoPageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnLeavePageAsync-GetcuReone-MvvmFrame-Wpf-EventArgs-NavigatingEventArgs-'></a>
-### OnLeavePageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationVeiwModelBase-OnLoadPageAsync'></a>
-### OnLoadPageAsync() `method`
-
-##### Summary
-
-*Inherit from parent.*
-
-##### Parameters
-
-This method has no parameters.
 
 <a name='T-GetcuReone-Cdo-Wpf-UiNotification-UI-NotificationWindow-NotificationWindowPage'></a>
 ## NotificationWindowPage `type`

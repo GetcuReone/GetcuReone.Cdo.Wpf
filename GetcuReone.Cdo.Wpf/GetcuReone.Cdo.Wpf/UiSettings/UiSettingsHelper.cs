@@ -21,7 +21,10 @@ namespace GetcuReone.Cdo.Wpf.UiSettings
             };
         }
 
-        internal static NamespaceModel MapToNamespaceModel(this SettingNamespace settingNamespace, string namespacesPath, GrViewModelBase viewModel)
+        internal static NamespaceModel MapToNamespaceModel(
+            this SettingNamespace settingNamespace,
+            string namespacesPath,
+            BaseGrViewModel viewModel)
         {
             var result = new NamespaceModel
             {

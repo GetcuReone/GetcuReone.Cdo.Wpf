@@ -6,10 +6,8 @@ namespace GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings
     /// <summary>
     /// Context model.
     /// </summary>
-    internal sealed class OpenSettings_ContextModel : FactBase<ContextModel>
+    internal sealed class OpenSettings_ContextModel : BaseFact<ContextModel>
     {
-        public OpenSettings_ContextModel(ContextModel value) : base(value)
-        {
-        }
+        public OpenSettings_ContextModel(ContextModel value) : base(value) { }
     }
 }

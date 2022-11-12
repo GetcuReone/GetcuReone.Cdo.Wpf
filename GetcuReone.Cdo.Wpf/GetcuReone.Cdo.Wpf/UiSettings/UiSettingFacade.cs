@@ -1,4 +1,5 @@
 ﻿using GetcuReone.Cdi;
+using GetcuReone.Cdi.Extensions;
 using GetcuReone.Cdi.MvvmFrameWpf;
 using GetcuReone.Cdm.Configuration.Settings;
 using GetcuReone.Cdo.Wpf.UiSettings.Entities;
@@ -9,11 +10,16 @@ using System.Windows;
 
 namespace GetcuReone.Cdo.Wpf.UiSettings
 {
-    internal sealed class UiSettingFacade : GrFacadeBase
+    internal sealed class UiSettingFacade : BaseGrFacade
     {
         protected override string FacadeName => nameof(UiSettingFacade);
 
-        private List<NamespaceModel> GetNamespaceModels(SettingNamespace settingNamespace, string namespacesPath, IReadOnlyCollection<SettingType> types, List<SettingValueError> settingValueErrors, GrViewModelBase viewModel)
+        private List<NamespaceModel> GetNamespaceModels(
+            SettingNamespace settingNamespace,
+            string namespacesPath,
+            IReadOnlyCollection<SettingType> types,
+            List<SettingValueError> settingValueErrors,
+            BaseGrViewModel viewModel)
         {
             var resultSpace = settingNamespace.MapToNamespaceModel(namespacesPath, viewModel);
             var result = new List<NamespaceModel>
@@ -51,7 +57,11 @@ namespace GetcuReone.Cdo.Wpf.UiSettings
             return result;
         }
 
-        internal List<NamespaceModel> GetNamespaceModels(SettingContext context, IReadOnlyCollection<SettingType> types, List<SettingValueError> settingValueErrors, GrViewModelBase viewModel)
+        internal List<NamespaceModel> GetNamespaceModels(
+            SettingContext context,
+            IReadOnlyCollection<SettingType> types,
+            List<SettingValueError> settingValueErrors,
+            BaseGrViewModel viewModel)
         {
             return context
                 .Namespaces

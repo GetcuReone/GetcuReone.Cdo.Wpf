@@ -12,7 +12,11 @@
         <RepositoryUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>getcureone cdo notification question settings wpf</PackageTags>
-        <PackageReleaseNotes>Added OpenFileDialog</PackageReleaseNotes>
+        <PackageReleaseNotes>
+            Changes:
+            - support for changes in the GetcuReone.Cdo.Settings.2.0.3 library
+            - support for changes in the GetcuReone.Cdi.WpfExtension.2.0.2 library
+        </PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/GetcuReone.Cdo.Wpf</PackageProjectUrl>
         <Copyright>Copyright © 2020 $(Authors)</Copyright>
@@ -48,9 +52,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="2.0.0" />
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="2.0.2" />
         <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="1.0.3" />
-        <PackageReference Include="GetcuReone.Cdo.Settings" Version="2.0.1" />
+        <PackageReference Include="GetcuReone.Cdo.Settings" Version="2.0.3" />
     </ItemGroup>
 
     <ItemGroup>

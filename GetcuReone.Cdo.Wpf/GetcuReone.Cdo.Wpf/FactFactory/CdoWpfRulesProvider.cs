@@ -1,4 +1,4 @@
-﻿using GetcuReone.Cdi;
+﻿using GetcuReone.Cdi.Extensions;
 using GetcuReone.Cdi.FactFactory;
 using GetcuReone.Cdm.Errors;
 using GetcuReone.Cdo.Settings;
@@ -15,7 +15,7 @@ using System.Linq;
 
 namespace GetcuReone.Cdo.Wpf.FactFactory
 {
-    internal sealed class CdoWpfRulesProvider : GrFactRulesProviderBase
+    internal sealed class CdoWpfRulesProvider : BaseGrFactRulesProvider
     {
         /// <inheritdoc/>
         public override IEnumerable<IFact> GetDefaultFacts()
@@ -27,10 +27,12 @@ namespace GetcuReone.Cdo.Wpf.FactFactory
         }
 
         /// <inheritdoc/>
-        public override FactRuleCollection GetRules()
+        public override IFactRuleCollection GetRules()
         {
             var rules = new FactRuleCollection();
+
             rules.AddRange(UiSettingsRules());
+
             return rules;
         }
 

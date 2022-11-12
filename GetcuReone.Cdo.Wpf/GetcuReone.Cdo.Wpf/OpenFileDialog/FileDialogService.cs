@@ -1,15 +1,12 @@
-﻿using GetcuReone.Cdi;
-using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
+﻿using GetcuReone.Cdo.Wpf.OpenFileDialog.Entities;
+using GetcuReone.ComboPatterns.Factory;
 using System.Linq;
 
 namespace GetcuReone.Cdo.Wpf.OpenFileDialog
 {
     /// <inheritdoc cref="IFileDialog"/>
-    internal sealed class FileDialogService : GrFactoryBase, IFileDialog
+    internal sealed class FileDialogService : FactoryBase, IFileDialog
     {
-        /// <inheritdoc />
-        protected override string FactoryName => nameof(FileDialogService);
-
         /// <inheritdoc />
         public SelectFilesResult SelectFiles(SelectFilesRequest request)
         {
