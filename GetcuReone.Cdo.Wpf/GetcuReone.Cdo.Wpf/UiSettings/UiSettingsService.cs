@@ -1,4 +1,5 @@
 ﻿using GetcuReone.Cdi;
+using GetcuReone.Cdi.Extensions;
 using GetcuReone.Cdi.MvvmFrameWpf;
 using GetcuReone.Cdm.Configuration.Settings;
 using GetcuReone.Cdo.Wpf.UiNotification;

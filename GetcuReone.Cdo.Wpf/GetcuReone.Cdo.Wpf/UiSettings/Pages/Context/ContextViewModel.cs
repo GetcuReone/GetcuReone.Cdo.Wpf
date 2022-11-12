@@ -1,4 +1,5 @@
-﻿using GetcuReone.Cdi;
+﻿using GetcuReone.Cdi.Extensions;
+using GetcuReone.Cdi.FactFactory;
 using GetcuReone.Cdi.MvvmFrameWpf;
 using GetcuReone.Cdm.Configuration.Settings;
 using GetcuReone.Cdo.Settings;
@@ -9,7 +10,7 @@ using GetcuReone.Cdo.Wpf.FactFactory.SpecialFacts;
 using GetcuReone.Cdo.Wpf.UiSettings.Entities;
 using GetcuReone.Cdo.Wpf.UiSettings.Models;
 using GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace;
-using GetcuReone.FactFactory.Versioned.Entities;
+using GetcuReone.FactFactory.Entities;
 using GetcuReone.MvvmFrame.Wpf.Commands;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
     /// <summary>
     /// View-model.
     /// </summary>
-    public sealed class ContextViewModel : GrViewModelBase
+    public sealed class ContextViewModel : BaseGrViewModel
     {
         internal List<Setting> ChangedSettings { get; private set; }
 
@@ -59,19 +60,24 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
         }
 
         /// <inheritdoc/>
-        protected override ValueTask OnGoPageAsync(object navigateParam)
+        protected override async ValueTask OnGoPageAsync(object navigateParam)
         {
             if (navigateParam is List<SettingValueError> settingValueErrors)
             {
-                var container = new VersionedFactContainer
+                var container = new FactContainer
                 {
                     new OpenSettings_ViewModel(this),
                     new OpenSettings_SettingValueErrors(settingValueErrors),
                 };
 
-                Context = GetFactFactory<CdoWpfRulesProvider>()
-                    .DeriveFact<OpenSettings_ContextModel, Version1>(container)
-                    .Value;
+                IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
+
+                factory.WantFacts((Version1 v, OpenSettings_ContextModel context) =>
+                {
+                    Context = context;
+                }, container);
+
+                await factory.DeriveAsync();
 
                 foreach (var settingModel in Context.Namespaces.SelectMany(n => n.Settings))
                     settingModel.Initialize();
@@ -79,17 +85,24 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
             else if (Context == null)
                 TryGoBack();
 
-            return base.OnGoPageAsync(navigateParam);
+            await base.OnGoPageAsync(navigateParam);
         }
 
         private void Ok(CommandArgs args)
         {
-            var container = new VersionedFactContainer
+            var container = new FactContainer
             {
                 new OpenSettings_NamespaceModels(Context.Namespaces.ToList()),
             };
-            ChangedSettings = GetFactFactory<CdoWpfRulesProvider>()
-                .DeriveFact<OpenSettings_Settings_Changed, Version1>(container);
+
+            IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
+
+            factory.WantFacts((Version1 v, OpenSettings_Settings_Changed changed) =>
+            {
+                ChangedSettings = changed;
+            }, container);
+
+            factory.Derive();
 
             if (!ChangedSettings.IsNullOrEmpty())
             {

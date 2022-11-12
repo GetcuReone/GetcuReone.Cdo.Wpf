@@ -6,7 +6,7 @@ namespace GetcuReone.Cdo.Wpf.OpenFileDialog
     /// <summary>
     /// Adapter for <see cref="Microsoft.Win32.OpenFileDialog"/>.
     /// </summary>
-    public sealed class OpenFileDialogAdapter : AdapterProxyBase<IFileDialog>
+    public class OpenFileDialogAdapter : AdapterProxyBase<IFileDialog>
     {
         /// <summary>
         /// Constructor.

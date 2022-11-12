@@ -7,7 +7,7 @@ namespace GetcuReone.Cdo.Wpf.UiQuestion.AskQuestionYesNo
     /// <summary>
     /// View-model.
     /// </summary>
-    public sealed class AskQuestionYesNoViewModel : AskQuestionViewModelBase
+    public sealed class AskQuestionYesNoViewModel : BaseAskQuestionViewModel
     {
         /// <summary>
         /// Button yes.

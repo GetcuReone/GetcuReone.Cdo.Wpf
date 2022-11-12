@@ -11,7 +11,9 @@ namespace GetcuReone.Cdo.Wpf.UiNotification
         public void SendNotificationWindow(UiNotificationRequest request)
         {
             VisibleFrame();
+
             var viewModel = ViewModelBase.CreateViewModel<NotificationWindowViewModel>(Frame, uiServices: UiServices);
+
             ViewModelBase.Navigate<NotificationWindowPage>(viewModel, request);
         }
 

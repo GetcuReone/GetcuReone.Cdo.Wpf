@@ -1,4 +1,6 @@
 ﻿using GetcuReone.Cdi;
+using GetcuReone.Cdi.Extensions;
+using GetcuReone.Cdi.FactFactory;
 using GetcuReone.Cdi.MvvmFrameWpf;
 using GetcuReone.Cdm.Configuration.Settings;
 using GetcuReone.Cdo.Wpf.FactFactory;
@@ -9,10 +11,11 @@ using GetcuReone.Cdo.Wpf.UiNotification;
 using GetcuReone.Cdo.Wpf.UiNotification.Entities;
 using GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums;
 using GetcuReone.Cdo.Wpf.UiSettings.Entities;
-using GetcuReone.FactFactory.Versioned.Entities;
+using GetcuReone.FactFactory.Entities;
 using GetcuReone.MvvmFrame.Entities;
 using GetcuReone.MvvmFrame.EventArgs;
 using GetcuReone.MvvmFrame.Wpf.Commands;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
@@ -22,7 +25,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
     /// <summary>
     /// Setting model.
     /// </summary>
-    public sealed class SettingModel : GrModelBase
+    public class SettingModel : BaseGrModel
     {
         internal Setting Setting { get; set; }
 
@@ -115,15 +118,22 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
             switch (e.PropertyName)
             {
                 case nameof(Value):
-                    var container = new VersionedFactContainer
+                    var container = new FactContainer
                     {
                         new OpenSettings_SettingModel(this)
                     };
-                    var errors = GetFactFactory<CdoWpfRulesProvider>()
-                        .DeriveFact<OpenSettings_SettingModel_ValidationErrors, Version1>(container)
-                        .Value;
 
-                    if (!CdiHelper.IsNullOrEmpty(errors))
+                    IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
+                    List<string> errors = null;
+
+                    factory.WantFacts((Version1 v, OpenSettings_SettingModel_ValidationErrors validationErrors) =>
+                    {
+                        errors = validationErrors;
+                    }, container);
+
+                    factory.Derive();
+
+                    if (!errors.IsNullOrEmpty())
                     {
                         foreach (var error in errors)
                             e.AddError(new MvvmFrameErrorDetail

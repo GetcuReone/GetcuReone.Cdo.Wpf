@@ -9,7 +9,6 @@
 
     <ItemGroup>
         <PackageReference Include="GetcuReone.GetcuTestAdapter" Version="1.3.5" />
-        <PackageReference Include="GetcuReone.Cdi" Version="2.0.0" />
     </ItemGroup>
 
     <ItemGroup>

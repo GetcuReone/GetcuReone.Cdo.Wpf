@@ -7,10 +7,8 @@ namespace GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings
     /// <summary>
     /// List <see cref="SettingValueError"/>
     /// </summary>
-    internal sealed class OpenSettings_SettingValueErrors : FactBase<List<SettingValueError>>
+    internal sealed class OpenSettings_SettingValueErrors : BaseFact<List<SettingValueError>>
     {
-        public OpenSettings_SettingValueErrors(List<SettingValueError> value) : base(value)
-        {
-        }
+        public OpenSettings_SettingValueErrors(List<SettingValueError> value) : base(value) { }
     }
 }

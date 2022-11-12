@@ -3,7 +3,5 @@
     /// <summary>
     /// View-model for <see cref="NotificationWindowPage"/>
     /// </summary>
-    public sealed class NotificationWindowViewModel : NotificationVeiwModelBase
-    {
-    }
+    public sealed class NotificationWindowViewModel : BaseNotificationVeiwModel { }
 }
