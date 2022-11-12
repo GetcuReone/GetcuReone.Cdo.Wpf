@@ -8,7 +8,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace
     /// <summary>
     /// View-model
     /// </summary>
-    public sealed class NamespaceViewModel : GrViewModelBase
+    public sealed class NamespaceViewModel : BaseGrViewModel
     {
         /// <summary>
         /// Context.

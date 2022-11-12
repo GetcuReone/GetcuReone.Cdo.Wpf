@@ -6,10 +6,8 @@ namespace GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings
     /// <summary>
     /// View-model.
     /// </summary>
-    internal sealed class OpenSettings_ViewModel : FactBase<GrViewModelBase>
+    internal sealed class OpenSettings_ViewModel : BaseFact<BaseGrViewModel>
     {
-        public OpenSettings_ViewModel(GrViewModelBase value) : base(value)
-        {
-        }
+        public OpenSettings_ViewModel(BaseGrViewModel value) : base(value) { }
     }
 }

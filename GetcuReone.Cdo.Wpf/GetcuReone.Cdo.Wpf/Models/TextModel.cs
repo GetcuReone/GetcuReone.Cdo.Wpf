@@ -6,7 +6,7 @@ namespace GetcuReone.Cdo.Wpf.Models
     /// <summary>
     /// Model for text.
     /// </summary>
-    public sealed class TextModel : GrModelBase
+    public class TextModel : BaseGrModel
     {
         /// <summary>
         /// Visibility text.

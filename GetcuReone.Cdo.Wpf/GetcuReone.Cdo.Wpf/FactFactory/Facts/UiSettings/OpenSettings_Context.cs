@@ -3,10 +3,8 @@ using GetcuReone.FactFactory;
 
 namespace GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings
 {
-    internal sealed class OpenSettings_Context : FactBase<SettingContext>
+    internal sealed class OpenSettings_Context : BaseFact<SettingContext>
     {
-        public OpenSettings_Context(SettingContext value) : base(value)
-        {
-        }
+        public OpenSettings_Context(SettingContext value) : base(value) { }
     }
 }

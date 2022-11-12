@@ -8,7 +8,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
     /// <summary>
     /// Model for <see cref="SettingNamespace"/>.
     /// </summary>
-    public sealed class NamespaceModel : GrModelBase
+    public class NamespaceModel : BaseGrModel
     {
         internal SettingNamespace Namespace { get; set; }
 

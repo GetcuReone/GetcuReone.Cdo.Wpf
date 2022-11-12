@@ -6,10 +6,8 @@ namespace GetcuReone.Cdo.Wpf.FactFactory.Facts.UiSettings
     /// <summary>
     /// Setting.
     /// </summary>
-    internal sealed class OpenSettings_SettingModel_Setting : FactBase<Setting>
+    internal sealed class OpenSettings_SettingModel_Setting : BaseFact<Setting>
     {
-        public OpenSettings_SettingModel_Setting(Setting value) : base(value)
-        {
-        }
+        public OpenSettings_SettingModel_Setting(Setting value) : base(value) { }
     }
 }

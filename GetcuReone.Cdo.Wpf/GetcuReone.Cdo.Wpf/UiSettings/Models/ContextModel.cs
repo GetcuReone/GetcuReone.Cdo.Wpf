@@ -7,7 +7,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
     /// <summary>
     /// Model for <see cref="SettingContext"/>.
     /// </summary>
-    public sealed class ContextModel : GrModelBase
+    public class ContextModel : BaseGrModel
     {
         internal SettingContext Context { get; set; }
 
