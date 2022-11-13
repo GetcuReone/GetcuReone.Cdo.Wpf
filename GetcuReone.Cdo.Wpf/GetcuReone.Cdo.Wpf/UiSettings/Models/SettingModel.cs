@@ -12,6 +12,7 @@ using GetcuReone.Cdo.Wpf.UiNotification.Entities;
 using GetcuReone.Cdo.Wpf.UiNotification.Entities.Enums;
 using GetcuReone.Cdo.Wpf.UiSettings.Entities;
 using GetcuReone.FactFactory.Entities;
+using GetcuReone.FactFactory.Versioned.Extensions;
 using GetcuReone.MvvmFrame.Entities;
 using GetcuReone.MvvmFrame.EventArgs;
 using GetcuReone.MvvmFrame.Wpf.Commands;
@@ -101,6 +102,7 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
                         Value = permissibleValue,
                         IsChecked = Value.EqualsOrdinalIgnoreCase(permissibleValue),
                     };
+
                     BindModel(radioModel);
                     PermissibleValues.Add(radioModel);
                 }
@@ -123,15 +125,8 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Models
                         new OpenSettings_SettingModel(this)
                     };
 
-                    IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
-                    List<string> errors = null;
-
-                    factory.WantFacts((Version1 v, OpenSettings_SettingModel_ValidationErrors validationErrors) =>
-                    {
-                        errors = validationErrors;
-                    }, container);
-
-                    factory.Derive();
+                    List<string> errors = GetFactFactory<CdoWpfRulesProvider>()
+                        .DeriveFact<OpenSettings_SettingModel_ValidationErrors, Version1>(container);
 
                     if (!errors.IsNullOrEmpty())
                     {
