@@ -1,5 +1,4 @@
 ﻿using GetcuReone.Cdi.Extensions;
-using GetcuReone.Cdi.FactFactory;
 using GetcuReone.Cdi.MvvmFrameWpf;
 using GetcuReone.Cdm.Configuration.Settings;
 using GetcuReone.Cdo.Settings;
@@ -11,6 +10,7 @@ using GetcuReone.Cdo.Wpf.UiSettings.Entities;
 using GetcuReone.Cdo.Wpf.UiSettings.Models;
 using GetcuReone.Cdo.Wpf.UiSettings.Pages.Namespace;
 using GetcuReone.FactFactory.Entities;
+using GetcuReone.FactFactory.Versioned.Extensions;
 using GetcuReone.MvvmFrame.Wpf.Commands;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,14 +70,8 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
                     new OpenSettings_SettingValueErrors(settingValueErrors),
                 };
 
-                IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
-
-                factory.WantFacts((Version1 v, OpenSettings_ContextModel context) =>
-                {
-                    Context = context;
-                }, container);
-
-                await factory.DeriveAsync();
+                Context  = await GetFactFactory<CdoWpfRulesProvider>()
+                    .DeriveFactAsync<OpenSettings_ContextModel, Version1>(container);
 
                 foreach (var settingModel in Context.Namespaces.SelectMany(n => n.Settings))
                     settingModel.Initialize();
@@ -95,14 +89,8 @@ namespace GetcuReone.Cdo.Wpf.UiSettings.Pages.Context
                 new OpenSettings_NamespaceModels(Context.Namespaces.ToList()),
             };
 
-            IGrFactFactory factory = GetFactFactory<CdoWpfRulesProvider>();
-
-            factory.WantFacts((Version1 v, OpenSettings_Settings_Changed changed) =>
-            {
-                ChangedSettings = changed;
-            }, container);
-
-            factory.Derive();
+            ChangedSettings = GetFactFactory<CdoWpfRulesProvider>()
+                .DeriveFact<OpenSettings_Settings_Changed, Version1>(container);
 
             if (!ChangedSettings.IsNullOrEmpty())
             {
